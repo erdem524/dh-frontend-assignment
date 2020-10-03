@@ -1,13 +1,10 @@
 import React from "react";
+import DatHuis from "./DatHuis/DatHuis";
 
 const App = () => {
   return (
     <>
-      <div>Import your component here!</div>
-      <div>
-        Have a look at the readme.md file for what is expected. And as always:
-        questions are welcome!
-      </div>
+      <DatHuis/> 
     </>
   );
 };

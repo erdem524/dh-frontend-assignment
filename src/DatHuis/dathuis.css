@@ -1,0 +1,90 @@
+body {
+	position: relative;
+	margin-top: 50px;
+}
+
+.container {
+	width: 400px;
+	max-height: 200px;
+	padding: 10px;
+	margin: 10px;
+	border: 1px solid #ccc;
+}
+.select-container {
+	border: 1px solid blue;
+	width: 390px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.select {
+	width: 350px;
+	border: none;
+	color: #4a4a4a;
+}
+
+.select:hover {
+	border: 1px solid #f7f7f7;
+	color: #798697;
+	font-size: 13px;
+	color: #cccccc;
+	position: absolute;
+	pointer-events: none;
+	top: 3px;
+	left: 12px;
+	transition: all 0.1s ease;
+}
+
+.search-icon {
+	padding: 10px;
+}
+
+.floating-label-group {
+	position: relative;
+	margin-top: 15px;
+	margin-bottom: 25px;
+}
+.floating-label-group.input {
+	width: 300px;
+}
+
+.floating-label {
+	font-size: 13px;
+	color: #cccccc;
+	position: absolute;
+	pointer-events: none;
+	top: 3px;
+	left: 12px;
+	transition: all 0.1s ease;
+}
+
+.select.placeholder:focus ~ .floating-label,
+.select.placeholder:not(:focus):valid ~ .floating-label {
+	top: -15px;
+	bottom: 0px;
+	left: 0px;
+	font-size: 15px;
+	opacity: 1;
+	color: #404040;
+}
+input:focus ~ .floating-label,
+input:not(:focus):valid ~ .floating-label {
+	top: -15px;
+	bottom: 0px;
+	left: 0px;
+	font-size: 15px;
+	opacity: 1;
+	color: #404040;
+}
+
+.row {
+	margin-top: 50px;
+}
+
+.form {
+	width: 390px;
+}
+.footer {
+	display: flex;
+	justify-content: space-between;
+}
